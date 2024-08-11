@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+
+
+:root {
+
+    --cor1: #080D0A;
+    --cor2: #525252;
+    --cor3: #F2F2F2;
+    --cor4: #222222;
+
+
+}
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--cor3);
+}
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    text-align: center;
+    padding: 35px;
+    padding-bottom: 50px;
+
+
+}
+
+nav {
+
+    background-color: var(--cor4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+
+}
+
+nav a:hover {
+    background-color: var(--cor1)
+}
+
+main {
+
+    background-color: var(--cor1);
+
+
+}
+
+main h1 {
+
+    text-align: center;
+    font-size: 36px;
+    padding: 110px 50px 20px 50px;
+
+}
+
+main h2 {
+
+    text-align: center;
+    font-size: 26px;
+
+}
+
+#viajarconosco {
+
+    margin-top: 150px;
+}
+
+
+.caixa-gray {
+
+    background-color: var(--cor2);
+    display: inline-block;
+    padding: 35px;
+    margin: 120px 25px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgb(109, 109, 109);
+
+
+}
+
+
+
+.caixa-gray h3 {
+
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    padding-bottom: 30px;
+
+
+}
+
+.caixa-gray img {
+   width: 500px;
+   height: 700px;
+
+
+}
+
+.caixa-gray-mid {
+
+    background-color: var(--cor2);
+    display: inline-block;
+    padding: 35px;
+    margin: 120px 25px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgb(109, 109, 109);
+
+
+}
+
+.caixa-gray-mid img {
+    width: 625px;
+    height: 625px;
+
+}
+
+.caixa-black {
+
+    background-color: var(--cor1);
+    display: inline-block;
+    padding: 35px;
+    margin: 120px 25px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px rgb(44, 44, 44);
+
+}
+
+
+.caixa-black h3 {
+
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+.caixa-black-mid {
+
+    background-color: var(--cor1);
+    display: inline-block;
+    padding: 35px;
+    margin: 120px 25px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px rgb(44, 44, 44);
+
+}
+
+.caixa-black-mid img {
+    width: 625px;
+    height: 625px;
+
+}
+
+
+
+article {
+
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 80px 0px;
+
+}
+
+.container-black {
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 80px 0px;
+
+}
+
+.texto h2 {
+
+    font-size: 64px;
+    padding: 90px;
+
+
+
+}
+
+.texto p {
+    font-size: 30px;
+    text-align: center
+}
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1452px) {
+
+    /* Classes gerais */
+
+    .container {
+        flex-direction: column;
+
+
+    }
+
+    .container-black {
+        flex-direction: column-reverse;
+
+    }
+
+    /* imagens seções de informações */
+
+    .caixa-gray-mid img {
+        
+        width: 600px;
+        height: 600px;
+
+
+    }
+
+
+    .caixa-black-mid img {
+
+         
+        width: 600px;
+        height: 600px;
+    
+
+
+    }
+
+    /* texto seções de informações */
+
+    .texto h2 {
+        font-size: 50px;
+        line-height: 28px;
+
+    }
+
+    .texto p {
+        font-size: 30px;
+        margin: 0px 150px;
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 810px) {
+
+    /* Classes gerais */
+
+    .container {
+        flex-direction: column;
+
+
+    }
+
+    .container-black {
+        flex-direction: column-reverse;
+
+    }
+
+    /* Imagens primeira seção */
+
+    .caixa-gray img {
+
+        width: 450px;
+        height: 600px;
+
+
+    }
+
+    /* padding das caixas */
+
+    .caixa-gray {
+        padding: 20px;
+
+    }
+
+
+    .caixa-gray-mid {
+        padding: 20px;
+
+    }
+
+    .caixa-black-mid {
+        padding: 20px;
+
+    }
+    
+
+
+
+    /* imagens seções de informações */
+
+    .caixa-gray-mid img {
+        
+        width: 400px;
+        height: 400px;
+
+
+    }
+
+
+    .caixa-black-mid img {
+
+         
+        width: 400px;
+        height: 400px;
+    
+
+
+    }
+
+    /* texto seções de informações */
+
+    .texto h2 {
+        font-size: 30px;
+        line-height: 22px;
+
+    }
+
+    .texto p {
+        font-size: 26px;
+        margin: 0px 100px;
+
+
+    }
+
+    /* primeira seção */
+    
+    #viajarconosco {
+        margin-top: 50px;
+
+    }
+
+}
